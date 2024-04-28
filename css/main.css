@@ -5,16 +5,13 @@
   --secondary: #0c46a3;
   --accent: #2176fd;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   color: white;
-  font-family: "DM Sans", sans-serif;
-}
-
-h1{
-  font-size: 2rem;
+  font-family: 'DM Sans', sans-serif !important;
 }
 
 body {
@@ -23,252 +20,287 @@ body {
 
 /* header */
 
-
-header nav{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 64px 0px 64px;
-  font-size: 24px;
-  font-weight: 300;
+.navbar {
+  padding: 12px 0 12px 0;
 }
 
-.active{
-  border-bottom: 3px solid var(--accent);
-}
-
-.logo img{
-  width: 220px;
-}
-
-.img_100{
-    width: 100%;
-}
-
-.nav-list {
-  list-style-type: none;
-  display: flex;
-  gap: 16px;
-}
-
-.nav-list li a {
-  text-decoration: none;
-}
-
-.nav-list li a:hover{
- color: #0360f7;
- transition: color 100ms;
-}
-
-.hero{
-    text-align: center;
-    background-image: url('/assets/img/deposito_cargas_filter_blue.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 80vh;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-}
-
-.hero h1{
-  font-size: 64px;
-  font-weight: bold;
-  max-width: 700px;
-}
-
-.hero h3{
-  font-weight: 300;
-  font-style: italic;
-  color: var(--text);
-}
-
-.hero img{
-    width: 300px;
-}
-
-
-.hero p{
-  font-size: 20px;
-  font-weight: 300;
-  max-width: 700px;
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.hero_cta{
-  padding: 20px 120px;
-  background-color: var(--accent);
-  border: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 700px;
-}
-
-.hero_cta:hover{
-  cursor: pointer;
-  background-color: #0360f7;
-  transition: background-color ease-in 100ms;
-}
-
-
-/* end header */
-
-/* main */
-
-main{
-  display: flex;
-  flex-flow: column;
-  padding: 32px 64px;
-}
-
-.content_description h2{
-  font-size: 36px;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  padding: 0 64px;
-  margin-bottom: 24px;
-}
-
-.content_description p{
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 3%;
-  margin-bottom: 16px;
-}
-
-.frase{
-  margin-bottom: 64px;
-}
-
-.frase h2{
-  font-weight: 500;
-}
-
-.frase h3{
-  font-weight: 100;
-}
-
-/* cards */
-
-.cards_container{
-  display: flex;
-  gap: 16px;
-  justify-content: space-between;
-
-}
-.card {
-  max-width: 470px;
-  min-width: 250px;
-  text-align: center;
+.offcanvas-header {
   background-color: var(--secondary);
 }
 
-.card-title{
-    font-size: 18px;
-    margin-bottom: 12px;
-    padding: 16px 0 8px 0;
-  }
-
-.card-desc{
-    text-align: left;
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 16px;
-    padding: 0 16px 0 16px;
-    color: var(--text);
-    letter-spacing: 3%;
-    margin-top: 8px;
+.offcanvas-body {
+  background-color: var(--background);
 }
 
-.card img {
-  width: 100%;
-  aspect-ratio: 19 / 9;
-  object-fit: cover;
+.navbar-toggler-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/assets/img/burger.png);
 }
 
-.img_transporte img{
- background-position: 30px 30px;
-}
-
-.card input[type='submit'] {
-    color: var(--background);
-    font-weight: 600;
-    background-color: var(--primary);
-    border: none;
-    border-radius: 2px;
-    padding: 12px 24px 12px 24px;
-    width: 100%;
-}
-
-.card input[type='submit']:hover{
-  cursor: pointer;
-}
-/* end cards */
-
-/* end main */
-
-/* footer */
-
-footer{
-    background-color: var(--secondary);
-    display: flex;
-    padding: 32px 64px;
-    justify-content: space-between;
-    align-content: center;
-    gap: 32px;
-}
-
-footer nav{
+.btn-close {
+  background-image: none;
+  color: var(--text);
+  opacity: 0.8;
+  font-size: 24px;
   display: flex;
-  flex-flow: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  flex-grow: 1;
 }
 
-footer nav ul{
-  font-size: 20px;
+.btn-close:active,
+.btn-close:hover {
+  opacity: 1;
 }
 
-footer nav p{
-  font-weight: 100;
-  font-size: 12px;
+.nav-link {
+  color: white;
+  font-size: 18px;
 }
 
-/* end footer */
+.nav-link:hover,
+.nav-link:active {
+  color: var(--accent);
+  opacity: 0.8;
+}
 
-/* seccion transporte */
+.active {
+  color: var(--accent) !important;
+  font-weight: 600;
+  border-bottom: 3px solid var(--accent);
+}
 
-.transporte_banner{
-  background-image: url(../img/barco.jpg);
-  background-position: center center;
+.logo {
+  width: 220px;
+}
+
+.offcanvas__logo {
+  width: 120px;
+}
+
+/* end header */
+
+/*main*/
+
+.main__hero {
+  background: url('../assets/img/deposito_cargas_filter_blue.png');
   background-size: cover;
-  padding: 32px 64px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 64px 0px 64px;
 }
 
-.transporte_banner h1{
-  font-size: 36px;
+.main__hero--title {
+  font-size: 64px;
+  font-weight: 800;
+  max-width: 700px;
 }
 
-.transporte_terrestre img{
-  width: 100px;
+.main__hero--subtitle {
+  font-style: italic;
+  font-weight: 200;
 }
 
-/* seccion nosotros*/
+.main__hero--desc {
+  font-size: 20px;
+  max-width: 700px;
+}
 
-.nosotros_main{
+.main__hero--button {
+  border: none;
+  background-color: var(--accent);
+  padding: 12px 24px 12px 24px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 700px;
+}
+
+.main__hero--button:hover {
+  background-color: var(--secondary);
+  transition: background-color 100ms;
+}
+
+.main__cards {
+  padding:36px;
+}
+
+.card {
+  width: 24rem;
+  background-color: #0c46a366;
+  opacity: 1;
+  color: white;
+}
+
+.card__btn {
+  width: 100%;
+}
+
+.main__content {
+  padding:64px 36px!important;
+  margin-bottom: 64px;
+}
+
+.main__content--title {
+  font-size: 48px;
   text-align: center;
 }
 
-.cargas_footer{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+.main__content--content {
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+.main_frase {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.main__frase--title {
+  font-size: 24px;
+  font-style: italic !important ;
+  line-height: 200%;
+  max-width: 700px;
+}
+
+.main__frase--author {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+mark {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* seguros */
+
+.main__content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.main__seguro__video--video{
+  aspect-ratio: 16/9;
+  width: 500px;
+}
+
+.main__seguro__encabezado{
+  max-width: 600px;
+}
+
+.main__seguro__content__secondary{
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.main__tipos__seguros{
+  max-width: 700px;
+}
+
+.main__mas__utilizados{
+  max-width: 700px;
+}
+
+/* end seguros */
+
+/* nosotros */
+
+.main__nosotros{
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* end nosotros */
+
+/* footer */
+
+
+.footer {
+  margin-top: 64px;
+  display: flex;
+  background-color: var(--secondary);
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+}
+
+.footer__logo {
+  width: 120px;
+}
+
+.footer_logo--img {
+  width: 180px;
+  padding-bottom: 18px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__navlist {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__navlist a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.footer__coop {
+  padding-bottom: 12px;
+}
+
+/* end footer*/
+
+@media (max-width: 991px) {
+  .logo {
+    width: 160px;
+  }
+
+  .main__content{
+    padding: 16px 0px;
+  }
+  .main__hero {
+    padding: 0 16px 0px 16px;
+  }
+  .main__hero--title {
+    font-size: 36px;
+  }
+  .main__hero--subtitle {
+    font-size: 22px;
+  }
+  .main__hero--desc {
+    font-size: 16px;
+    max-width: 80%;
+  }
+
+  .main__content--title {
+    font-size: 36px;
+  }
+
+  .main__cards {
+    padding:0 36px;
+  }
+  
 }
