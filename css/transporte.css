@@ -16,11 +16,11 @@
 }
 
 .main__banner__transporte{
-  background-image: url(/assets/img/banner_pattern_black.png);
+  background-image: url(../assets/img/banner_pattern_black.png);
 }
 
 .main__banner__cargas{
-  background-image: url(/assets/img/deposito_cargas_filter_black.png);
+  background-image: url(../assets/img/deposito_cargas_filter_black.png);
 }
 
 .main__banner--title{
@@ -67,19 +67,19 @@
 }
 
 .transporte__cards__tipo--terrestre{
-  background-image: url(/assets/img/camiones_filter_black.png);
+  background-image: url(../assets/img/camiones_filter_black.png);
 }
 
 .transporte__cards__tipo--maritimo{
-    background-image: url(/assets/img/barco_filter_black.png);
+    background-image: url(../assets/img/barco_filter_black.png);
 }
 
 .transporte__cards__tipo--ferreo{
-  background-image: url(/assets/img/tren_filter_black.png);
+  background-image: url(../assets/img/tren_filter_black.png);
 }
 
 .transporte__cards__tipo--aereo{
-  background-image: url(/assets/img/avion_fliter_black.png);
+  background-image: url(../assets/img/avion_fliter_black.png);
 }
 
 .transporte__card{
