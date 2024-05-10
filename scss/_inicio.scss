@@ -1,0 +1,102 @@
+.main__hero {
+    background: url('../assets/img/deposito_cargas_filter_blue.png');
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 64px 0px 64px;
+  
+    
+    &__hero--subtitle {
+      font-style: italic;
+      font-weight: 200;
+    }
+
+    .main__hero--title {
+      font-size: 64px;
+      font-weight: 800;
+      max-width: 700px;
+    }
+    
+    &__hero--desc {
+      font-size: 20px;
+      max-width: 700px;
+    }
+  
+    .main__hero--button {
+      border: none;
+      color: $color--text;
+      text-decoration: none;
+      background-color: $color--accent;
+      padding: 12px 24px 12px 24px;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 600;
+      max-width: 700px;
+        .main__hero--button:hover {
+          background-color: $color--secondary;
+          transition: background-color 100ms;
+        }
+    }
+    
+  
+    
+  }
+ 
+  
+  .main__cards {
+    padding:36px;
+    .card {
+      width: 24rem;
+      background-color: $card--color;
+      opacity: 1;
+      color: $color--text;
+      &:last-child{
+        margin-bottom: 32px;
+      }
+      .card__btn {
+        width: 100%;
+      }
+    }
+  }
+  
+
+
+  .main__content {
+    padding:64px 36px!important;
+    margin-bottom: 64px;
+
+    &__content--title {
+      font-size: 48px;
+      text-align: center;
+    }
+    
+    &__content--content {
+      font-size: 22px;
+      font-weight: 200;
+      letter-spacing: 0.5px;
+    }
+
+    &_frase {
+      margin-top: 64px;
+      text-align: center;
+
+      &__frase--title {
+        font-size: 24px;
+        font-style: italic !important ;
+        line-height: 200%;
+        max-width: 700px;        
+        
+      }
+      
+      &__frase--author {
+        font-size: 18px;
+        opacity: 0.8;
+      }
+    }
+    
+   
+  }

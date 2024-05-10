@@ -1,0 +1,92 @@
+.main__banner{
+      display: flex;
+      flex-direction:column ;
+      justify-content: center;
+      align-items: center;
+      padding: 64px 36px;
+      background-size: cover;
+  }
+  
+  .main__banner__transporte{
+    background-image: url(../assets/img/banner_pattern_black.png);
+  }
+  
+  .main__banner__cargas{
+    background-image: url(../assets/img/deposito_cargas_filter_black.png);
+  }
+  
+  .main__banner--title{
+      font-size: 36px;
+  }
+  
+  .main__banner--desc{
+      max-width: 1600px;
+      font-size: 18px;
+      font-weight: 200;
+      letter-spacing: 1.2px;
+  }
+  
+  .transporte__cards__encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px;
+    flex-wrap: wrap;
+  }
+  
+  .transporte__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .transporte__cards__tipo{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 700px;
+    background-position: center;
+    background-size: cover;
+  
+  }
+  
+  .transporte__cards{
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    border-bottom: 4px solid $color--secondary;
+  }
+  
+  .transporte__cards__tipo--terrestre{
+    background-image: url(../assets/img/camiones_filter_black.png);
+  }
+  
+  .transporte__cards__tipo--maritimo{
+      background-image: url(../assets/img/barco_filter_black.png);
+  }
+  
+  .transporte__cards__tipo--ferreo{
+    background-image: url(../assets/img/tren_filter_black.png);
+  }
+  
+  .transporte__cards__tipo--aereo{
+    background-image: url(../assets/img/avion_fliter_black.png);
+  }
+  
+  .transporte__card{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 700px;
+  }
+  
+  .transporte__card--icono{
+    width: 36px;
+  }
+  
+  .footer{
+    margin-top: 0!important;
+  }
+  
+  

@@ -1,35 +1,28 @@
-:root {
-  --text: #e7edf7;
-  --background: #060e1b;
-  --primary: #8ab0ed;
-  --secondary: #0c46a3;
-  --accent: #2176fd;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
-  font-family: 'DM Sans', sans-serif !important;
+  color: #e7edf7;
+  font-family: "DM Sans", sans-serif !important;
 }
-
-body {
-  background-color: var(--background);
+* body {
+  background-color: #060e1b;
 }
-
-/* header */
+* .mark {
+  background-color: #2176fd;
+  color: #e7edf7;
+}
 
 .navbar {
   padding: 12px 0 12px 0;
 }
 
 .offcanvas-header {
-  background-color: var(--secondary);
+  background-color: #0c46a3;
 }
 
 .offcanvas-body {
-  background-color: var(--background);
+  background-color: #060e1b;
 }
 
 .navbar-toggler-icon {
@@ -40,7 +33,7 @@ body {
 
 .btn-close {
   background-image: none;
-  color: var(--text);
+  color: #e7edf7;
   opacity: 0.8;
   font-size: 24px;
   display: flex;
@@ -54,18 +47,18 @@ body {
 }
 
 .nav-link {
-  color: white;
+  color: #e7edf7;
   font-size: 18px;
 }
 
 .nav-link:hover,
 .nav-link:active {
-  color: var(--accent);
+  color: #2176fd;
   opacity: 0.8;
 }
 
 .active {
-  color: var(--accent) !important;
+  color: #2176fd !important;
   font-weight: 600;
   border-bottom: 3px solid var(--accent);
 }
@@ -79,11 +72,8 @@ body {
 }
 
 /* end header */
-
-/*main*/
-
 .main__hero {
-  background: url('../assets/img/deposito_cargas_filter_blue.png');
+  background: url("../assets/img/deposito_cargas_filter_blue.png");
   background-size: cover;
   height: 80vh;
   display: flex;
@@ -93,6 +83,29 @@ body {
   text-align: center;
   padding: 0 64px 0px 64px;
 }
+.main__hero__hero--subtitle {
+  font-style: italic;
+  font-weight: 200;
+}
+.main__hero__hero--desc {
+  font-size: 20px;
+  max-width: 700px;
+}
+.main__hero .main__hero--button {
+  border: none;
+  color: #e7edf7;
+  text-decoration: none;
+  background-color: #2176fd;
+  padding: 12px 24px 12px 24px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 700px;
+}
+.main__hero .main__hero--button .main__hero--button:hover {
+  background-color: #0c46a3;
+  transition: background-color 100ms;
+}
 
 .main__hero--title {
   font-size: 64px;
@@ -100,138 +113,54 @@ body {
   max-width: 700px;
 }
 
-.main__hero--subtitle {
-  font-style: italic;
-  font-weight: 200;
-}
-
-.main__hero--desc {
-  font-size: 20px;
-  max-width: 700px;
-}
-
-.main__hero--button {
-  border: none;
-  background-color: var(--accent);
-  padding: 12px 24px 12px 24px;
-  width: 100%;
-  font-size: 20px;
-  font-weight: 600;
-  max-width: 700px;
-}
-
-.main__hero--button:hover {
-  background-color: var(--secondary);
-  transition: background-color 100ms;
-}
-
 .main__cards {
-  padding:36px;
+  padding: 36px;
 }
-
-.card {
+.main__cards .card {
   width: 24rem;
-  background-color: #0c46a366;
+  background-color: rgba(12, 70, 163, 0.4);
   opacity: 1;
-  color: white;
+  color: #e7edf7;
 }
-
-.card__btn {
+.main__cards .card:last-child {
+  margin-bottom: 32px;
+}
+.main__cards .card .card__btn {
   width: 100%;
 }
 
 .main__content {
-  padding:64px 36px!important;
+  padding: 64px 36px !important;
   margin-bottom: 64px;
 }
-
-.main__content--title {
+.main__content__content--title {
   font-size: 48px;
   text-align: center;
 }
-
-.main__content--content {
+.main__content__content--content {
   font-size: 22px;
   font-weight: 200;
   letter-spacing: 0.5px;
 }
-
-.main_frase {
+.main__content_frase {
   margin-top: 64px;
   text-align: center;
 }
-
-.main__frase--title {
+.main__content_frase__frase--title {
   font-size: 24px;
-  font-style: italic !important ;
+  font-style: italic !important;
   line-height: 200%;
   max-width: 700px;
 }
-
-.main__frase--author {
+.main__content_frase__frase--author {
   font-size: 18px;
   opacity: 0.8;
 }
 
-mark {
-  background-color: var(--accent);
-  color: white;
-}
-
-/* seguros */
-
-.main__content{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: start;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.main__seguro__video--video{
-  aspect-ratio: 16/9;
-  width: 500px;
-}
-
-.main__seguro__encabezado{
-  max-width: 600px;
-}
-
-.main__seguro__content__secondary{
-  display: flex;
-  align-items: start;
-  justify-content: space-evenly;
-}
-
-.main__tipos__seguros{
-  max-width: 700px;
-}
-
-.main__mas__utilizados{
-  max-width: 700px;
-}
-
-/* end seguros */
-
-/* nosotros */
-
-.main__nosotros{
-  height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* end nosotros */
-
-/* footer */
-
-
 .footer {
   margin-top: 64px;
   display: flex;
-  background-color: var(--secondary);
+  background-color: #0c46a3;
   justify-content: center;
   align-items: center;
   padding: 12px 0px;
@@ -263,7 +192,7 @@ mark {
 }
 
 .footer__navlist a {
-  color: var(--text);
+  color: #e7edf7;
   text-decoration: none;
 }
 
@@ -271,14 +200,132 @@ mark {
   padding-bottom: 12px;
 }
 
-/* end footer*/
+.main__content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.main__seguro__video--video {
+  aspect-ratio: 16/9;
+  width: 500px;
+}
+
+.main__seguro__encabezado {
+  max-width: 600px;
+}
+
+.main__seguro__content__secondary {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.main__tipos__seguros {
+  max-width: 700px;
+}
+
+.main__mas__utilizados {
+  max-width: 700px;
+}
+
+.main__banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 36px;
+  background-size: cover;
+}
+
+.main__banner__transporte {
+  background-image: url(../assets/img/banner_pattern_black.png);
+}
+
+.main__banner__cargas {
+  background-image: url(../assets/img/deposito_cargas_filter_black.png);
+}
+
+.main__banner--title {
+  font-size: 36px;
+}
+
+.main__banner--desc {
+  max-width: 1600px;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1.2px;
+}
+
+.transporte__cards__encabezado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+  flex-wrap: wrap;
+}
+
+.transporte__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.transporte__cards__tipo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 700px;
+  background-position: center;
+  background-size: cover;
+}
+
+.transporte__cards {
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
+  border-bottom: 4px solid #0c46a3;
+}
+
+.transporte__cards__tipo--terrestre {
+  background-image: url(../assets/img/camiones_filter_black.png);
+}
+
+.transporte__cards__tipo--maritimo {
+  background-image: url(../assets/img/barco_filter_black.png);
+}
+
+.transporte__cards__tipo--ferreo {
+  background-image: url(../assets/img/tren_filter_black.png);
+}
+
+.transporte__cards__tipo--aereo {
+  background-image: url(../assets/img/avion_fliter_black.png);
+}
+
+.transporte__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 700px;
+}
+
+.transporte__card--icono {
+  width: 36px;
+}
+
+.footer {
+  margin-top: 0 !important;
+}
 
 @media (max-width: 991px) {
   .logo {
     width: 160px;
   }
-
-  .main__content{
+  .main__content {
     padding: 16px 0px;
   }
   .main__hero {
@@ -294,13 +341,12 @@ mark {
     font-size: 16px;
     max-width: 80%;
   }
-
   .main__content--title {
     font-size: 36px;
   }
-
   .main__cards {
-    padding:0 36px;
+    padding: 0 36px;
   }
-  
 }
+
+/*# sourceMappingURL=main.css.map */

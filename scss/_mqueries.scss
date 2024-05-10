@@ -1,0 +1,32 @@
+@media (max-width: 991px) {
+    .logo {
+      width: 160px;
+    }
+  
+    .main__content{
+      padding: 16px 0px;
+    }
+    .main__hero {
+      padding: 0 16px 0px 16px;
+    }
+    .main__hero--title {
+      font-size: 36px;
+    }
+    .main__hero--subtitle {
+      font-size: 22px;
+    }
+    .main__hero--desc {
+      font-size: 16px;
+      max-width: 80%;
+    }
+  
+    .main__content--title {
+      font-size: 36px;
+    }
+  
+    .main__cards {
+      padding:0 36px;
+    }
+    
+  }
+  
