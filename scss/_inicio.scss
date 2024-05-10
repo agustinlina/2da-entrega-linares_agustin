@@ -10,23 +10,23 @@
     padding: 0 64px 0px 64px;
   
     
-    &__hero--subtitle {
-      font-style: italic;
-      font-weight: 200;
-    }
+  &--subtitle {
+    font-style: italic!important;
+    font-weight: 200!important;
+  }
 
-    .main__hero--title {
+  &--title {
       font-size: 64px;
       font-weight: 800;
       max-width: 700px;
     }
     
-    &__hero--desc {
-      font-size: 20px;
-      max-width: 700px;
-    }
+  &--desc {
+     font-size: 20px;
+     max-width: 700px;
+  }
   
-    .main__hero--button {
+  &--button {
       border: none;
       color: $color--text;
       text-decoration: none;
@@ -36,15 +36,12 @@
       font-size: 20px;
       font-weight: 600;
       max-width: 700px;
-        .main__hero--button:hover {
+      &--button:hover {
           background-color: $color--secondary;
           transition: background-color 100ms;
-        }
+      }
     }
-    
-  
-    
-  }
+}  
  
   
   .main__cards {

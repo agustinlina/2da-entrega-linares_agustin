@@ -5,6 +5,7 @@
   
     .main__content{
       padding: 16px 0px;
+      margin-bottom: 36px;
     }
     .main__hero {
       padding: 0 16px 0px 16px;
@@ -27,6 +28,49 @@
     .main__cards {
       padding:0 36px;
     }
+
+    .seguros__cards__container{
+      justify-content: center;
+      gap: 24x;
+    }
+
+    .main__mas__utilizados--title{
+      text-align: center;
+    }
+
+    .main__tipos__seguros--title{
+      text-align: center;
+    }
+    
+    .seguros__cards__card{
+      max-width: 700px!important;
+    }
+
+    .main__seguro__video--video{
+
+      max-width: 90%;
+    }
+
+    .cargas__tipos__tipo--gallery{
+      gap: 30px;
+    }
+    .cargas__tipos__tipo--gallery img{
+      width: 100%!important;
+    }
     
   }
   
+  @media (max-width: 400px) {
+
+    .logo, .footer_logo--img {
+      padding-left:12px;
+      width: 120px!important;
+    }
+
+    .footer__navlist{
+      flex-direction: column;
+    }
+    .footer__coop{
+      text-align: center;
+    }
+  }

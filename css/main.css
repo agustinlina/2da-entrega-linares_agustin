@@ -13,65 +13,6 @@
   color: #e7edf7;
 }
 
-.navbar {
-  padding: 12px 0 12px 0;
-}
-
-.offcanvas-header {
-  background-color: #0c46a3;
-}
-
-.offcanvas-body {
-  background-color: #060e1b;
-}
-
-.navbar-toggler-icon {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(/assets/img/burger.png);
-}
-
-.btn-close {
-  background-image: none;
-  color: #e7edf7;
-  opacity: 0.8;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn-close:active,
-.btn-close:hover {
-  opacity: 1;
-}
-
-.nav-link {
-  color: #e7edf7;
-  font-size: 18px;
-}
-
-.nav-link:hover,
-.nav-link:active {
-  color: #2176fd;
-  opacity: 0.8;
-}
-
-.active {
-  color: #2176fd !important;
-  font-weight: 600;
-  border-bottom: 3px solid var(--accent);
-}
-
-.logo {
-  width: 220px;
-}
-
-.offcanvas__logo {
-  width: 120px;
-}
-
-/* end header */
 .main__hero {
   background: url("../assets/img/deposito_cargas_filter_blue.png");
   background-size: cover;
@@ -83,15 +24,20 @@
   text-align: center;
   padding: 0 64px 0px 64px;
 }
-.main__hero__hero--subtitle {
-  font-style: italic;
-  font-weight: 200;
+.main__hero--subtitle {
+  font-style: italic !important;
+  font-weight: 200 !important;
 }
-.main__hero__hero--desc {
+.main__hero--title {
+  font-size: 64px;
+  font-weight: 800;
+  max-width: 700px;
+}
+.main__hero--desc {
   font-size: 20px;
   max-width: 700px;
 }
-.main__hero .main__hero--button {
+.main__hero--button {
   border: none;
   color: #e7edf7;
   text-decoration: none;
@@ -102,15 +48,9 @@
   font-weight: 600;
   max-width: 700px;
 }
-.main__hero .main__hero--button .main__hero--button:hover {
+.main__hero--button--button:hover {
   background-color: #0c46a3;
   transition: background-color 100ms;
-}
-
-.main__hero--title {
-  font-size: 64px;
-  font-weight: 800;
-  max-width: 700px;
 }
 
 .main__cards {
@@ -157,6 +97,53 @@
   opacity: 0.8;
 }
 
+.navbar {
+  padding: 12px 0 12px 0;
+}
+.navbar .offcanvas-header {
+  background-color: #0c46a3;
+}
+.navbar .offcanvas-body {
+  background-color: #060e1b;
+}
+.navbar .offcanvas__logo {
+  width: 120px;
+}
+.navbar .navbar-toggler-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/assets/img/burger.png);
+}
+.navbar .btn-close {
+  background-image: none;
+  color: #e7edf7;
+  opacity: 0.8;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .btn-close:active, .navbar .btn-close:hover {
+  opacity: 1;
+}
+.navbar .nav-link {
+  color: #e7edf7;
+  font-size: 18px;
+}
+.navbar .nav-link:hover, .navbar .nav-link:active {
+  color: #2176fd;
+  opacity: 0.8;
+}
+.navbar .active {
+  color: #2176fd !important;
+  font-weight: 600;
+  border-bottom: 3px solid #2176fd;
+}
+.navbar .logo {
+  width: 220px;
+}
+
+/* end header */
 .footer {
   margin-top: 64px;
   display: flex;
@@ -165,23 +152,16 @@
   align-items: center;
   padding: 12px 0px;
 }
-
-.footer__logo {
-  width: 120px;
-}
-
 .footer_logo--img {
   width: 180px;
   padding-bottom: 18px;
 }
-
 .footer__nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .footer__navlist {
   display: flex;
   gap: 12px;
@@ -190,12 +170,13 @@
   list-style-type: none;
   padding: 0;
 }
-
 .footer__navlist a {
   color: #e7edf7;
   text-decoration: none;
 }
-
+.footer__navlist a:hover {
+  opacity: 0.8;
+}
 .footer__coop {
   padding-bottom: 12px;
 }
@@ -207,30 +188,72 @@
   flex-wrap: wrap;
   gap: 12px;
 }
-
-.main__seguro__video--video {
+.main__content .main__seguro__encabezado {
+  max-width: 600px;
+}
+.main__content .main__seguro__video--video {
   aspect-ratio: 16/9;
   width: 500px;
-}
-
-.main__seguro__encabezado {
-  max-width: 600px;
 }
 
 .main__seguro__content__secondary {
   display: flex;
   align-items: start;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-
-.main__tipos__seguros {
+.main__seguro__content__secondary .main__tipos__seguros {
   max-width: 700px;
 }
-
-.main__mas__utilizados {
+.main__seguro__content__secondary .main__tipos__seguros .main__tipos__seguros--title {
+  font-size: 36px;
+}
+.main__seguro__content__secondary .main__mas__utilizados {
   max-width: 700px;
 }
+.main__seguro__content__secondary .main__mas__utilizados--title {
+  font-size: 36px;
+}
 
+.seguros__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+.seguros__cards--title {
+  margin-bottom: 24px;
+}
+.seguros__cards--title h2 {
+  font-size: 36px;
+}
+.seguros__cards .seguros__cards__container--spacer {
+  height: 36px;
+}
+.seguros__cards__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 16px;
+  gap: 36px;
+}
+.seguros__cards__container .seguros__cards__card {
+  max-width: 450px;
+  background-color: #0c46a3;
+  padding: 16px 32px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.seguros__cards__container .seguros__cards__card--img {
+  width: 36px;
+  margin-bottom: 12px;
+}
+.seguros__cards__container .seguros__cards__card--title {
+  font-size: 24px;
+}
 .main__banner {
   display: flex;
   flex-direction: column;
@@ -239,19 +262,12 @@
   padding: 64px 36px;
   background-size: cover;
 }
-
 .main__banner__transporte {
   background-image: url(../assets/img/banner_pattern_black.png);
 }
-
-.main__banner__cargas {
-  background-image: url(../assets/img/deposito_cargas_filter_black.png);
-}
-
 .main__banner--title {
   font-size: 36px;
 }
-
 .main__banner--desc {
   max-width: 1600px;
   font-size: 18px;
@@ -259,6 +275,16 @@
   letter-spacing: 1.2px;
 }
 
+.transporte__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
+  border-bottom: 4px solid #0c46a3;
+}
 .transporte__cards__encabezado {
   display: flex;
   justify-content: center;
@@ -266,15 +292,7 @@
   padding: 36px;
   flex-wrap: wrap;
 }
-
-.transporte__cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.transporte__cards__tipo {
+.transporte__cards__encabezado .transporte__cards__tipo {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -282,12 +300,14 @@
   background-position: center;
   background-size: cover;
 }
-
-.transporte__cards {
-  background-position: center;
-  background-size: cover;
-  min-height: 80vh;
-  border-bottom: 4px solid #0c46a3;
+.transporte__cards__encabezado .transporte__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 700px;
+}
+.transporte__cards__encabezado .transporte__card--icono {
+  width: 36px;
 }
 
 .transporte__cards__tipo--terrestre {
@@ -306,19 +326,46 @@
   background-image: url(../assets/img/avion_fliter_black.png);
 }
 
-.transporte__card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 700px;
-}
-
-.transporte__card--icono {
-  width: 36px;
-}
-
 .footer {
   margin-top: 0 !important;
+}
+
+.main__nosotros {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__banner__cargas {
+  background-image: url(../assets/img/deposito_cargas_filter_black.png);
+}
+
+.cargas__tipos {
+  padding: 36px 36px;
+  text-align: center;
+}
+.cargas__tipos .cargas__tipos__tipo .cargas__tipos__tipo--title {
+  margin-top: 12px;
+}
+.cargas__tipos .cargas__tipos__tipo .cargas__tipos__tipo--title p {
+  font-size: 24px;
+}
+.cargas__tipos .cargas__tipos__tipo .cargas__tipos__tipo--desc {
+  text-align: left;
+  font-weight: 200;
+  letter-spacing: 1.2px;
+  align-self: center;
+}
+.cargas__tipos .cargas__tipos__tipo .cargas__tipos__tipo--gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.cargas__tipos .cargas__tipos__tipo .cargas__tipos__tipo--gallery img {
+  width: 25%;
 }
 
 @media (max-width: 991px) {
@@ -327,6 +374,7 @@
   }
   .main__content {
     padding: 16px 0px;
+    margin-bottom: 36px;
   }
   .main__hero {
     padding: 0 16px 0px 16px;
@@ -346,6 +394,40 @@
   }
   .main__cards {
     padding: 0 36px;
+  }
+  .seguros__cards__container {
+    justify-content: center;
+    gap: 24x;
+  }
+  .main__mas__utilizados--title {
+    text-align: center;
+  }
+  .main__tipos__seguros--title {
+    text-align: center;
+  }
+  .seguros__cards__card {
+    max-width: 700px !important;
+  }
+  .main__seguro__video--video {
+    max-width: 90%;
+  }
+  .cargas__tipos__tipo--gallery {
+    gap: 30px;
+  }
+  .cargas__tipos__tipo--gallery img {
+    width: 100% !important;
+  }
+}
+@media (max-width: 400px) {
+  .logo, .footer_logo--img {
+    padding-left: 12px;
+    width: 120px !important;
+  }
+  .footer__navlist {
+    flex-direction: column;
+  }
+  .footer__coop {
+    text-align: center;
   }
 }
 
