@@ -8,10 +8,16 @@ Como estudiante de Comercio Exterior y apasionado por el mundo del desarrollo we
 
 ### Desarrollo
 
+#### Maquetación
 * HTML5.
+
+#### Estilos
 * CSS3.
 * SASS.
 * Bootstrap 5
+
+#### Animaciones
+
 * AOS (Animate On Scroll Library).
 
 ### Diseño

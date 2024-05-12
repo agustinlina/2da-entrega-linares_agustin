@@ -36,6 +36,8 @@
 .main__hero--desc {
   font-size: 20px;
   max-width: 700px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
 }
 .main__hero--button {
   border: none;
@@ -55,6 +57,7 @@
 
 .main__cards {
   padding: 36px;
+  margin-bottom: 36px;
 }
 .main__cards .card {
   width: 24rem;
@@ -65,36 +68,37 @@
 .main__cards .card:last-child {
   margin-bottom: 32px;
 }
-.main__cards .card .card__btn {
+.main__cards .card__btn {
   width: 100%;
 }
 
 .main__content {
-  padding: 64px 36px !important;
+  padding: 36px 36px !important;
   margin-bottom: 64px;
 }
 .main__content__content--title {
   font-size: 48px;
   text-align: center;
 }
-.main__content__content--content {
+.main__content--content {
   font-size: 22px;
-  font-weight: 200;
-  letter-spacing: 0.5px;
+  font-weight: 200 !important;
+  letter-spacing: 1.2px;
 }
-.main__content_frase {
+.main__content .main__frase {
   margin-top: 64px;
   text-align: center;
+  max-width: 1400px;
 }
-.main__content_frase__frase--title {
-  font-size: 24px;
+.main__content .main__frase--title {
+  font-size: 36px;
   font-style: italic !important;
   line-height: 200%;
   max-width: 700px;
 }
-.main__content_frase__frase--author {
+.main__content .main__frase--author {
   font-size: 18px;
-  opacity: 0.8;
+  font-weight: 400;
 }
 
 .navbar {
@@ -330,16 +334,113 @@
   margin-top: 0 !important;
 }
 
+.body__nosotros {
+  background-color: #0c46a3;
+}
+
+header {
+  background-color: #060e1b;
+}
+
 .main__nosotros {
-  height: 75vh;
+  margin: 36px 64px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+.main__nosotros .main__nosotros--title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.main__nosotros .main__nosotros--desc {
+  max-width: 900px;
+  align-self: center;
+  margin-bottom: 36px;
+}
+.main__nosotros .main__nosotros__card {
+  border: 3px solid white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  align-self: center;
+  margin-bottom: 36px;
+}
+.main__nosotros .main__nosotros__card .main__nosotros__card--img {
+  padding: 36px;
+}
+.main__nosotros .main__nosotros__card .main__nosotros__card--img img {
+  max-width: 250px;
+}
+.main__nosotros .main__nosotros__card .main__nosotros__card--nombre {
+  font-size: 28px;
+  font-weight: 600;
+}
+.main__nosotros .main__nosotros__card .main__nosotros__card--leyenda {
+  font-size: 18px;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  line-height: 22px;
+}
+.main__nosotros .main__nosotros__card .main__nosotros__card__media {
+  display: flex;
+  width: 100%;
+}
+.main__nosotros .main__nosotros__card .main__nosotros__card__media .main__nosotros__card__media--item {
+  border-top: 3px solid white;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.main__nosotros .main__nosotros__card .main__nosotros__card__media .main__nosotros__card__media--item a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.main__nosotros .main__nosotros__card .main__nosotros__card__media :nth-child(2) {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+.main__nosotros .main__nosotros__proyectos {
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos--title {
+  margin-bottom: 36px;
+}
+.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos__proyectos {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos__proyectos .main__nosotros__proyectos__proyectos--proyecto {
+  height: 250px;
+  width: 250px;
+  border-radius: 6px;
+  background-color: #060e1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 36px;
+}
+.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos__proyectos .main__nosotros__proyectos__proyectos--proyecto a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos__proyectos .main__nosotros__proyectos__proyectos--proyecto a img {
+  width: 100%;
 }
 
 .main__banner__cargas {
   background-image: url(../assets/img/deposito_cargas_filter_black.png);
+  background-position: 20% 20%;
 }
 
 .cargas__tipos {
@@ -392,6 +493,9 @@
   .main__content--title {
     font-size: 36px;
   }
+  .main__frase--title {
+    font-size: 28px !important;
+  }
   .main__cards {
     padding: 0 36px;
   }
@@ -416,6 +520,9 @@
   }
   .cargas__tipos__tipo--gallery img {
     width: 100% !important;
+  }
+  .main__nosotros {
+    margin: 12px 36px;
   }
 }
 @media (max-width: 400px) {

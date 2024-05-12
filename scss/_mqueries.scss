@@ -24,7 +24,11 @@
     .main__content--title {
       font-size: 36px;
     }
-  
+    
+    .main__frase--title{
+      font-size: 28px!important;
+    }
+
     .main__cards {
       padding:0 36px;
     }
@@ -56,6 +60,10 @@
     }
     .cargas__tipos__tipo--gallery img{
       width: 100%!important;
+    }
+
+    .main__nosotros{
+      margin: 12px 36px;
     }
     
   }
