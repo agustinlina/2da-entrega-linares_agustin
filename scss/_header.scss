@@ -1,62 +1,63 @@
 .navbar {
-    padding: 12px 0 12px 0;
-    
-    .offcanvas{
-      &-header {
-        background-color: $color--secondary;
-      }
-      
-      &-body {
-        background-color: $color--background;      
-      }    
-       
-      &__logo {
-        width: 120px;
-      }
-    }
-    
-    .navbar-toggler-icon {
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-image: url(/assets/img/burger.png);
+  padding: 12px 0 12px 0;
+
+  .offcanvas {
+    &-header {
+      background-color: $color--secondary;
     }
 
-    .btn-close {
-      background-image: none;
-      color: $color--text;
-      opacity: 0.8;
-      font-size: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &:active,
-      &:hover {
+    &-body {
+      background-color: $color--background;
+    }
+
+    &__logo {
+      width: 120px;
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/img/burger.png);
+  }
+
+  .btn-close {
+    background-image: none;
+    color: $color--text;
+    opacity: 0.8;
+    font-size: 24px;
+    @include flex-center;
+
+    &:active,
+    &:hover {
       opacity: 1;
     }
-    }        
-    
-    .nav-link {
-      color: $color--text;
-      font-size: 18px;
-      &:hover,
-      &:active {
-        color: $color--accent;
-        opacity: 0.8;
+  }
+
+  .nav-link {
+    color: $color--text;
+    font-size: 18px;
+
+    &:hover,
+    &:active {
+      color: $color--accent;
+      opacity: 0.8;
     }
-    }       
-    
-    .active {
-      color: $color--accent!important;
-      font-weight: 600;
-      border-bottom: 3px solid $color--accent;
-    }
-    
-    .logo {
-      width: 220px;
-    }
-    
-   
-  } 
- 
-  
-  /* end header */
+  }
+
+  .active {
+    color: $color--accent !important;
+    font-weight: 600;
+    border-bottom: 3px solid $color--accent;
+  }
+
+  .logo {
+    padding-left: 36px;
+    width: 220px;
+  }
+
+
+}
+
+
+/* end header */

@@ -14,42 +14,40 @@ header {
   display: flex;
   flex-direction: column;
 
-  .main__nosotros--title {
+  &--title {
     text-align: center;
     margin-bottom: 24px;
   }
 
-  .main__nosotros--desc {
+  &--desc {
     max-width: 900px;
     align-self: center;
     margin-bottom: 36px;
   }
 
 
-  .main__nosotros__card {
+  &__card {
     border: 3px solid white;
     border-radius: 12px;
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     max-width: 700px;
     align-self: center;
     margin-bottom: 36px;
 
-    .main__nosotros__card--img {
+    &--img {
       padding: 36px;
       & img {
         max-width: 250px;
       }
     }
 
-    .main__nosotros__card--nombre {
+    &--nombre {
       font-size: 28px;
       font-weight: 600;
     }
 
-    .main__nosotros__card--leyenda {
+    &--leyenda {
       font-size: 18px;
       font-weight: 200;
       font-style: italic;
@@ -57,16 +55,14 @@ header {
       line-height: 22px;
     }
 
-    .main__nosotros__card__media {
+    &__media {
       display: flex;
       width: 100%;
 
-      .main__nosotros__card__media--item {
+      &--item {
         border-top: 3px solid white;
         flex-grow: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         padding: 16px;
         
         & a:hover{
@@ -86,29 +82,25 @@ header {
 
   .main__nosotros__proyectos {
     margin-bottom: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     flex-direction: column;
 
-    .main__nosotros__proyectos--title {
+    &--title {
       margin-bottom: 36px;
     }
 
-    .main__nosotros__proyectos__proyectos {
+    &__proyectos {
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
       justify-content: space-around;
 
-      .main__nosotros__proyectos__proyectos--proyecto {
+      &--proyecto {
         height: 250px;
         width: 250px;
         border-radius: 6px;
         background-color: $color--background;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         padding:0 36px;
         & a{
           &:hover{

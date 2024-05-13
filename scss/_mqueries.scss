@@ -1,84 +1,99 @@
 @media (max-width: 991px) {
-    .logo {
-      width: 160px;
-    }
-  
-    .main__content{
-      padding: 16px 0px;
-      margin-bottom: 36px;
-    }
-    .main__hero {
-      padding: 0 16px 0px 16px;
-    }
-    .main__hero--title {
-      font-size: 36px;
-    }
-    .main__hero--subtitle {
-      font-size: 22px;
-    }
-    .main__hero--desc {
-      font-size: 16px;
-      max-width: 80%;
-    }
-  
-    .main__content--title {
-      font-size: 36px;
-    }
-    
-    .main__frase--title{
-      font-size: 28px!important;
-    }
-
-    .main__cards {
-      padding:0 36px;
-    }
-
-    .seguros__cards__container{
-      justify-content: center;
-      gap: 24x;
-    }
-
-    .main__mas__utilizados--title{
-      text-align: center;
-    }
-
-    .main__tipos__seguros--title{
-      text-align: center;
-    }
-    
-    .seguros__cards__card{
-      max-width: 700px!important;
-    }
-
-    .main__seguro__video--video{
-
-      max-width: 90%;
-    }
-
-    .cargas__tipos__tipo--gallery{
-      gap: 30px;
-    }
-    .cargas__tipos__tipo--gallery img{
-      width: 100%!important;
-    }
-
-    .main__nosotros{
-      margin: 12px 36px;
-    }
-    
+  .logo {
+    width: 160px;
   }
-  
-  @media (max-width: 400px) {
 
-    .logo, .footer_logo--img {
-      padding-left:12px;
-      width: 120px!important;
-    }
-
-    .footer__navlist{
-      flex-direction: column;
-    }
-    .footer__coop{
-      text-align: center;
-    }
+  .main__content {
+    padding: 16px 0;
+    margin-bottom: 36px;
   }
+
+  .main__hero {
+    padding: 0 16px 0px 16px;
+  }
+
+  .main__hero--title{
+    font-size: 36px;
+    letter-spacing:0.8px;
+  }
+
+  .main__hero--subtitle {
+    font-size: 22px;
+  }
+
+  .main__hero--desc {
+    font-size: 16px;
+    max-width: 80%;
+  }
+
+  .main__content--title {
+    font-size: 36px;
+  }
+
+  .main__frase--title {
+    font-size: 28px !important;
+  }
+
+  .main__cards {
+    padding: 0 36px;
+  }
+
+  .seguros__cards__container {
+    justify-content: center;
+    gap: 24x;
+  }
+
+  .main__mas__utilizados--title {
+    text-align: center;
+  }
+
+  .main__mas__utilizados {
+    padding: 0 16px
+  }
+
+  .main__tipos__seguros--title {
+    text-align: center;
+  }
+
+  .main__seguro__encabezado p{
+    width: 100%;
+  }
+  .seguros__cards__card {
+    max-width: 700px !important;
+  }
+
+  .main__seguro__video--video {
+
+    max-width: 90%;
+  }
+
+  .cargas__tipos__tipo--gallery {
+    gap: 30px;
+  }
+
+  .cargas__tipos__tipo--gallery img {
+    width: 100% !important;
+  }
+
+  .main__nosotros {
+    margin: 12px 36px;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .logo,
+  .footer_logo--img {
+    padding-left: 12px;
+    width: 120px !important;
+  }
+
+  .footer__navlist {
+    flex-direction: column;
+  }
+
+  .footer__coop {
+    text-align: center;
+  }
+}

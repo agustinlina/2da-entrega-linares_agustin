@@ -4,3 +4,50 @@ $color--primary: #8ab0ed;
 $color--secondary: #0c46a3;
 $color--accent: #2176fd;
 $card--color: #0c46a366;
+
+
+
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin bg-center-cover{
+    background-position: center;
+    background-size: cover;
+}
+
+$text_size: (
+    titulo: 64px,
+    subtitulo: 36px,
+    sub_subtitulo: 24px,
+    texto: 18px,
+    sub_texto:16px
+);
+
+$text_weight: (
+    titulo: 800,
+    subtitulo: 600,
+    sub_subtitulo: 400,
+    texto: 300,
+    sub_texto:200
+);
+
+$text_spacing:(
+    titulo: 1.2px,
+    subtitulo: 1.2px,
+    sub_subtitulo: 1.2px,
+    texto: 1.2px,
+    sub_texto:1.2px
+);
+
+
+@each $key, $value in $text_size {
+    .txt__#{$key} {
+        font-size: $value;
+        font-weight: map-get($text_weight, $key);
+        letter-spacing: map-get($text_spacing, $key);
+    }
+}

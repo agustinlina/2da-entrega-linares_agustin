@@ -6,6 +6,7 @@
 .cargas__tipos {
     padding: 36px 36px;
     text-align: center;
+
     .cargas_tipos--title {
         .cargas_tipos--title h2 {}
     }
@@ -13,7 +14,8 @@
     .cargas__tipos__tipo {
         .cargas__tipos__tipo--title {
             margin-top: 12px;
-            & p{
+
+            & p {
                 font-size: 24px;
             }
         }

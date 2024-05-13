@@ -1,11 +1,9 @@
 .main__hero {
     background: url('../assets/img/deposito_cargas_filter_blue.png');
-    background-size: cover;
+    @include bg-center-cover;
     height: 80vh;
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     padding: 0 64px 0px 64px;
   
@@ -16,16 +14,13 @@
   }
 
   &--title {
-      font-size: 64px;
-      font-weight: 800;
       max-width: 700px;
     }
+  
     
   &--desc {
-     font-size: 20px;
-     max-width: 700px;
-     font-weight: 300;
-     letter-spacing: 1.2px;
+      max-width: 700px;
+
   }
   
   &--button {
@@ -38,9 +33,9 @@
       font-size: 20px;
       font-weight: 600;
       max-width: 700px;
-      &--button:hover {
+      &:hover {
           background-color: $color--secondary;
-          transition: background-color 100ms;
+          transition: background-color 250ms;
       }
     }
 }  

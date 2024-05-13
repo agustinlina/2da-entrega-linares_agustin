@@ -1,3 +1,33 @@
+.txt__titulo {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.txt__subtitulo {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.txt__sub_subtitulo {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.txt__texto {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+
+.txt__sub_texto {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1.2px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,12 +45,13 @@
 
 .main__hero {
   background: url("../assets/img/deposito_cargas_filter_blue.png");
+  background-position: center;
   background-size: cover;
   height: 80vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   padding: 0 64px 0px 64px;
 }
@@ -29,15 +60,10 @@
   font-weight: 200 !important;
 }
 .main__hero--title {
-  font-size: 64px;
-  font-weight: 800;
   max-width: 700px;
 }
 .main__hero--desc {
-  font-size: 20px;
   max-width: 700px;
-  font-weight: 300;
-  letter-spacing: 1.2px;
 }
 .main__hero--button {
   border: none;
@@ -50,9 +76,9 @@
   font-weight: 600;
   max-width: 700px;
 }
-.main__hero--button--button:hover {
+.main__hero--button:hover {
   background-color: #0c46a3;
-  transition: background-color 100ms;
+  transition: background-color 250ms;
 }
 
 .main__cards {
@@ -144,6 +170,7 @@
   border-bottom: 3px solid #2176fd;
 }
 .navbar .logo {
+  padding-left: 36px;
   width: 220px;
 }
 
@@ -151,9 +178,9 @@
 .footer {
   margin-top: 64px;
   display: flex;
-  background-color: #0c46a3;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: #0c46a3;
   padding: 12px 0px;
 }
 .footer_logo--img {
@@ -162,15 +189,15 @@
 }
 .footer__nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .footer__navlist {
   display: flex;
-  gap: 12px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 12px;
   list-style-type: none;
   padding: 0;
 }
@@ -193,7 +220,7 @@
   gap: 12px;
 }
 .main__content .main__seguro__encabezado {
-  max-width: 600px;
+  max-width: 700px;
 }
 .main__content .main__seguro__video--video {
   aspect-ratio: 16/9;
@@ -209,7 +236,7 @@
 .main__seguro__content__secondary .main__tipos__seguros {
   max-width: 700px;
 }
-.main__seguro__content__secondary .main__tipos__seguros .main__tipos__seguros--title {
+.main__seguro__content__secondary .main__tipos__seguros--title {
   font-size: 36px;
 }
 .main__seguro__content__secondary .main__mas__utilizados {
@@ -221,9 +248,9 @@
 
 .seguros__cards {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin-bottom: 36px;
 }
 .seguros__cards--title {
@@ -232,7 +259,7 @@
 .seguros__cards--title h2 {
   font-size: 36px;
 }
-.seguros__cards .seguros__cards__container--spacer {
+.seguros__cards__container--spacer {
   height: 36px;
 }
 .seguros__cards__container {
@@ -260,10 +287,11 @@
 }
 .main__banner {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 64px 36px;
+  background-position: center;
   background-size: cover;
 }
 .main__banner__transporte {
@@ -280,8 +308,8 @@
 }
 
 .transporte__cards {
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-position: center;
@@ -291,8 +319,8 @@
 }
 .transporte__cards__encabezado {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 36px;
   flex-wrap: wrap;
 }
@@ -347,48 +375,48 @@ header {
   display: flex;
   flex-direction: column;
 }
-.main__nosotros .main__nosotros--title {
+.main__nosotros--title {
   text-align: center;
   margin-bottom: 24px;
 }
-.main__nosotros .main__nosotros--desc {
+.main__nosotros--desc {
   max-width: 900px;
   align-self: center;
   margin-bottom: 36px;
 }
-.main__nosotros .main__nosotros__card {
+.main__nosotros__card {
   border: 3px solid white;
   border-radius: 12px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   max-width: 700px;
   align-self: center;
   margin-bottom: 36px;
 }
-.main__nosotros .main__nosotros__card .main__nosotros__card--img {
+.main__nosotros__card--img {
   padding: 36px;
 }
-.main__nosotros .main__nosotros__card .main__nosotros__card--img img {
+.main__nosotros__card--img img {
   max-width: 250px;
 }
-.main__nosotros .main__nosotros__card .main__nosotros__card--nombre {
+.main__nosotros__card--nombre {
   font-size: 28px;
   font-weight: 600;
 }
-.main__nosotros .main__nosotros__card .main__nosotros__card--leyenda {
+.main__nosotros__card--leyenda {
   font-size: 18px;
   font-weight: 200;
   font-style: italic;
   text-align: center;
   line-height: 22px;
 }
-.main__nosotros .main__nosotros__card .main__nosotros__card__media {
+.main__nosotros__card__media {
   display: flex;
   width: 100%;
 }
-.main__nosotros .main__nosotros__card .main__nosotros__card__media .main__nosotros__card__media--item {
+.main__nosotros__card__media--item {
   border-top: 3px solid white;
   flex-grow: 1;
   display: flex;
@@ -396,11 +424,11 @@ header {
   justify-content: center;
   padding: 16px;
 }
-.main__nosotros .main__nosotros__card .main__nosotros__card__media .main__nosotros__card__media--item a:hover {
+.main__nosotros__card__media--item a:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
 }
-.main__nosotros .main__nosotros__card .main__nosotros__card__media :nth-child(2) {
+.main__nosotros__card__media :nth-child(2) {
   border-left: 3px solid white;
   border-right: 3px solid white;
 }
@@ -411,16 +439,16 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos--title {
+.main__nosotros .main__nosotros__proyectos--title {
   margin-bottom: 36px;
 }
-.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos__proyectos {
+.main__nosotros .main__nosotros__proyectos__proyectos {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos__proyectos .main__nosotros__proyectos__proyectos--proyecto {
+.main__nosotros .main__nosotros__proyectos__proyectos--proyecto {
   height: 250px;
   width: 250px;
   border-radius: 6px;
@@ -430,11 +458,11 @@ header {
   justify-content: center;
   padding: 0 36px;
 }
-.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos__proyectos .main__nosotros__proyectos__proyectos--proyecto a:hover {
+.main__nosotros .main__nosotros__proyectos__proyectos--proyecto a:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
 }
-.main__nosotros .main__nosotros__proyectos .main__nosotros__proyectos__proyectos .main__nosotros__proyectos__proyectos--proyecto a img {
+.main__nosotros .main__nosotros__proyectos__proyectos--proyecto a img {
   width: 100%;
 }
 
@@ -474,7 +502,7 @@ header {
     width: 160px;
   }
   .main__content {
-    padding: 16px 0px;
+    padding: 16px 0;
     margin-bottom: 36px;
   }
   .main__hero {
@@ -482,6 +510,7 @@ header {
   }
   .main__hero--title {
     font-size: 36px;
+    letter-spacing: 0.8px;
   }
   .main__hero--subtitle {
     font-size: 22px;
@@ -506,8 +535,14 @@ header {
   .main__mas__utilizados--title {
     text-align: center;
   }
+  .main__mas__utilizados {
+    padding: 0 16px;
+  }
   .main__tipos__seguros--title {
     text-align: center;
+  }
+  .main__seguro__encabezado p {
+    width: 100%;
   }
   .seguros__cards__card {
     max-width: 700px !important;
@@ -526,7 +561,8 @@ header {
   }
 }
 @media (max-width: 400px) {
-  .logo, .footer_logo--img {
+  .logo,
+  .footer_logo--img {
     padding-left: 12px;
     width: 120px !important;
   }
