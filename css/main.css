@@ -469,22 +469,25 @@ header {
 .main__banner__cargas {
   background-image: url(../assets/img/deposito_cargas_filter_black.png);
   background-position: 20% 20%;
+  font-size: 24px !important;
 }
 
 .cargas__tipos {
   padding: 36px 36px;
   text-align: center;
 }
-.cargas__tipos .cargas__tipos__tipo .cargas__tipos__tipo--title {
+.cargas__tipos .cargas__tipos__tipo--title {
   margin-top: 12px;
 }
-.cargas__tipos .cargas__tipos__tipo .cargas__tipos__tipo--title p {
-  font-size: 24px;
+.cargas__tipos .cargas__tipos__tipo--title p {
+  font-size: 28px;
 }
-.cargas__tipos .cargas__tipos__tipo .cargas__tipos__tipo--desc {
+.cargas__tipos .cargas__tipos__tipo--desc {
   text-align: left;
   font-weight: 200;
+  font-size: 24px;
   letter-spacing: 1.2px;
+  padding: 0 64px;
   align-self: center;
 }
 .cargas__tipos .cargas__tipos__tipo .cargas__tipos__tipo--gallery {
@@ -558,6 +561,9 @@ header {
   }
   .main__nosotros {
     margin: 12px 36px;
+  }
+  .cargas__tipos__tipo--desc {
+    padding: 0 !important;
   }
 }
 @media (max-width: 400px) {

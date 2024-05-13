@@ -1,29 +1,29 @@
 .main__banner__cargas {
     background-image: url(../assets/img/deposito_cargas_filter_black.png);
     background-position: 20% 20%;
+    font-size: 24px!important;
 }
 
 .cargas__tipos {
     padding: 36px 36px;
     text-align: center;
 
-    .cargas_tipos--title {
-        .cargas_tipos--title h2 {}
-    }
 
     .cargas__tipos__tipo {
-        .cargas__tipos__tipo--title {
+        &--title {
             margin-top: 12px;
-
+            
             & p {
-                font-size: 24px;
+                font-size: 28px;
             }
         }
 
-        .cargas__tipos__tipo--desc {
+        &--desc {
             text-align: left;
             font-weight: 200;
+            font-size: 24px;
             letter-spacing: 1.2px;
+            padding: 0 64px;
             align-self: center;
         }
 
