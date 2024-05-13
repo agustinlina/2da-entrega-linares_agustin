@@ -1,0 +1,22 @@
+# Tercera Preentrega #
+
+- Todos los HTML responsive.
+
+- Utilizar SASS, en vez de CSS3.
+
+	- Mixins (3)
+		ej: width y height, padding y margin.
+	- Maps (1)
+		ej: colores, titulos.
+	- Nesting
+	- Variables
+	
+- Agregar animaciones, AOS o Animate.
+
+- Agregar un .gitignore, obligadamente.
+
+Para no incluir una carpeta: carpeta/ se agrega un backslash al final.
+Para no incluir un archivo: archivo.txt* se agrega un asterisco.
+
+- Agregar un README.md con la sintaxis del mismo, explicando el proyecto las tecnologias utilizadas y los commits.
+
