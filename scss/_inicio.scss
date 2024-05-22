@@ -63,10 +63,12 @@
   .main__content {
     padding:36px 36px!important;
     margin-bottom: 64px;
-
-    &__content--title {
+    display: flex;
+    flex-direction: column;
+    &--title {
       font-size: 48px;
       text-align: center;
+      align-self: center;
     }
     
     &--content{
@@ -79,12 +81,14 @@
       margin-top: 64px;
       text-align: center;
       max-width: 1400px;
+      align-self: center;  
 
       &--title {
         font-size: 36px;
         font-style: italic !important;
         line-height: 200%;
-        max-width: 700px;        
+        max-width: 700px;
+              
         
       }
       

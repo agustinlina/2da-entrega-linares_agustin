@@ -101,10 +101,13 @@
 .main__content {
   padding: 36px 36px !important;
   margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
 }
-.main__content__content--title {
+.main__content--title {
   font-size: 48px;
   text-align: center;
+  align-self: center;
 }
 .main__content--content {
   font-size: 22px;
@@ -115,6 +118,7 @@
   margin-top: 64px;
   text-align: center;
   max-width: 1400px;
+  align-self: center;
 }
 .main__content .main__frase--title {
   font-size: 36px;
