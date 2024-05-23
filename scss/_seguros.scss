@@ -23,8 +23,15 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 
+
+
+
   .main__tipos__seguros {
     max-width: 700px;
+
+    .seguro__list li {
+     margin-bottom: 12px;
+    }
 
     &--title {
       font-size: 36px;
@@ -33,13 +40,17 @@
 
   .main__mas__utilizados {
     max-width: 700px;
-
+    .seguro__list--msu li{
+      margin-bottom: 12px;
+    }
     &--title {
       font-size: 36px;
     }
   }
 
 }
+
+
 
 
 
@@ -57,9 +68,9 @@
     }
   }
 
-&__container--spacer{
-  height: 36px;
-}
+  &__container--spacer {
+    height: 36px;
+  }
 
 
   &__container {

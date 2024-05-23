@@ -240,11 +240,17 @@
 .main__seguro__content__secondary .main__tipos__seguros {
   max-width: 700px;
 }
+.main__seguro__content__secondary .main__tipos__seguros .seguro__list li {
+  margin-bottom: 12px;
+}
 .main__seguro__content__secondary .main__tipos__seguros--title {
   font-size: 36px;
 }
 .main__seguro__content__secondary .main__mas__utilizados {
   max-width: 700px;
+}
+.main__seguro__content__secondary .main__mas__utilizados .seguro__list--msu li {
+  margin-bottom: 12px;
 }
 .main__seguro__content__secondary .main__mas__utilizados--title {
   font-size: 36px;
@@ -332,7 +338,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 700px;
+  max-width: 1400px;
+  justify-self: start;
   background-position: center;
   background-size: cover;
 }
@@ -344,6 +351,9 @@
 }
 .transporte__cards__encabezado .transporte__card--icono {
   width: 36px;
+}
+.transporte__cards__encabezado .transporte__list li {
+  padding-bottom: 8px;
 }
 
 .transporte__cards__tipo--terrestre {
@@ -473,7 +483,6 @@ header {
 .main__banner__cargas {
   background-image: url(../assets/img/deposito_cargas_filter_black.png);
   background-position: 20% 20%;
-  font-size: 24px !important;
 }
 
 .cargas__tipos {
