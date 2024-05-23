@@ -146,7 +146,7 @@
 .navbar .navbar-toggler-icon {
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/assets/img/burger.png);
+  background-image: url(../assets/img/burger.png);
 }
 .navbar .btn-close {
   background-image: none;
